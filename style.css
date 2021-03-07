@@ -1,0 +1,151 @@
+/* Dentro de la raiz del proyecto se pone el css global 
+    Luego esto se agrega en el _app.js
+*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.avo-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.avo-card {
+  border: none;
+  border-radius: 0.28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.avo-card_content {
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  padding: 1em;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_presentation-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_about {
+  max-width: 50%;
+}
+
+.table {
+  width: 100%;
+  background: #fff;
+  margin: 1em 0;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  box-shadow: none;
+  border-radius: 0.28571429rem;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.87);
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 50%;
+}
+
+.table th {
+  background-color: #f9fafb;
+  padding: 0.92857143em 0.78571429em;
+}
+
+.table td {
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  padding: 0.92857143em 0.78571429em;
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  -webkit-box-shadow: 0px 4px 0px #d4d4d5;
+  -moz-box-shadow: 0px 4px 0px #d4d4d5;
+  box-shadow: 0px 4px 0px #d4d4d5;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .product_about {
+    max-width: 80%;
+  }
+
+  .table {
+    max-width: 80%;
+  }
+
+  .product_presentation {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .product_about {
+    max-width: 80%;
+  }
+
+  .table {
+    max-width: 80%;
+  }
+
+  .product_presentation {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .product_about {
+    max-width: 50%;
+  }
+
+  .table {
+    max-width: 50%;
+  }
+
+  .product_presentation {
+    flex-direction: row;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .product_about {
+    max-width: 50%;
+  }
+
+  .table {
+    max-width: 50%;
+  }
+
+  .product_presentation {
+    flex-direction: row;
+  }
+}
