@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\nexport var Footer = function Footer() {\n  return __jsx(\"div\", {\n    className: \"text-center\"\n  }, __jsx(\"h4\", null, \"Alejandro Salguero Q \\uD83D\\uDEF8\"));\n};","map":null,"metadata":{},"sourceType":"module"}

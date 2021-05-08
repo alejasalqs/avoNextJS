@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Database from \"../../../database/db_helper\";\n\nconst getAvoById = async (req, resp) => {\n  const DB = new Database();\n  const {\n    id\n  } = req.query;\n  const entry = await DB.getById(id);\n  resp.status(200).json(entry);\n};\n\nexport default getAvoById;","map":null,"metadata":{},"sourceType":"module"}
